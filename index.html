@@ -3,59 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho: Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agrinho 2026 - Futuro Sustentável</title>
+    <style>
+        /* CSS focado em Acessibilidade (Alto Contraste e Fontes Legíveis) */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            color: #1a331e; /* Verde escuro para garantir contraste */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e6f40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #1e4629;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 2px solid #2e6f40;
+        }
+        .caption {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        /* Foco visível para navegação por teclado */
+        a:focus, button:focus {
+            outline: 3px solid #ffcc00;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ACESSIBILIDADE: Link direto para o conteúdo para leitores de tela -->
-    <a href="#conteudo-principal" class="link-acessibilidade">Pular para o conteúdo principal</a>
-
-    <header role="banner">
-        <div class="container-header">
-            <h1>Agrinho 2026</h1>
-            <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
-        </div>
+    <header>
+        <!-- H1 principal para leitores de tela -->
+        <h1>Programa Agrinho 2026</h1>
+        <p>Tema: Agro forte, futuro sustentável</p>
     </header>
 
-    <main id="conteudo-principal" role="main">
-        <!-- Seção sobre o tema -->
-        <section class="card-informativo">
-            <h2>O Equilíbrio do Nosso Futuro</h2>
-            <!-- ACESSIBILIDADE: Imagem com Alt Text descritivo obrigatório -->
-            <img src="https://unsplash.com" 
-                 alt="Plantação jovem de milho crescendo de forma saudável em solo bem cuidado durante o pôr do sol." 
-                 class="imagem-sustentavel">
-            <p>O Programa Agrinho fomenta a inovação e as práticas sustentáveis no campo. Produzir alimentos respeitando os recursos naturais, como o solo e a água, garante que as próximas gerações herdem um ecossistema produtivo e saudável.</p>
+    <main>
+        <section aria-labelledby="sobre-tema">
+            <h2 id="sobre-tema">Equilíbrio Entre Produção e Meio Ambiente</h2>
+            <p>O desenvolvimento do campo depende diretamente de práticas agrícolas inteligentes. Preservar as nascentes de água, cuidar do solo e adotar tecnologias limpas garante o alimento de amanhã sem destruir a natureza hoje.</p>
         </section>
 
-        <!-- Seção de Pilares -->
-        <section class="pilares-sustentabilidade">
-            <h2>Pilares do Projeto</h2>
-            <div class="grid-pilares">
-                <div class="pilar">
-                    <h3>🌱 Conservação do Solo</h3>
-                    <p>Uso de técnicas inovadoras e recomposição biológica para manter a terra fértil e produtiva.</p>
-                </div>
-                <div class="pilar">
-                    <h3>💧 Preservação da Água</h3>
-                    <p>Sistemas inteligentes de irrigação focados no desperdício zero e proteção de nascentes.</p>
-                </div>
-            </div>
+        <!-- Container da imagem com tags obrigatórias de acessibilidade e direitos autorais -->
+        <div class="image-container">
+            <img src="agrinho-sustentavel.jpg" 
+                 alt="Desenho digital de uma fazenda moderna com painéis solares, árvores preservadas ao redor de um rio limpo e um trator elétrico cultivando o campo de forma sustentável." 
+                 longdesc="#descricao-longa">
+            
+            <!-- Crédito de Direitos Autorais visível (Atribuição Livre/Creative Commons) -->
+            <p class="caption">Imagem: Gerada por Inteligência Artificial (Domínio Público / CC0 1.0)</p>
+        </div>
+
+        <section id="descricao-longa" aria-label="Descrição detalhada da imagem">
+            <h2>Acessibilidade: Detalhes da Imagem</h2>
+            <p><em>Para leitores de tela:</em> A imagem ilustra o equilíbrio ecológico. Ela exibe uma lavoura verdejante integrada a uma área de mata nativa preservada, com fontes de energia renovável ao fundo, representando a evolução tecnológica e sustentável do agronegócio paranaense.</p>
         </section>
     </main>
-
-    <footer role="contentinfo">
-        <!-- DIREITOS AUTORAIS: Créditos transparentes e indicação de autoria -->
-        <div class="creditos">
-            <p><strong>Desenvolvido por:</strong> Seu Nome Completo | Colégio Estadual do Paraná</p>
-            <p><strong>Direitos Autorais e Licenças:</strong></p>
-            <ul>
-                <li>Imagens gratuitas livres para uso comercial fornecidas por <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</li>
-                <li>Código aberto distribuído sob a Licença MIT (Livre para modificação escolar).</li>
-            </ul>
-        </div>
-    </footer>
 
 </body>
 </html>
